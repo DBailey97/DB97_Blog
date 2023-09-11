@@ -1,0 +1,42 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Contact
+  order: 4
+---
+<div class="container">
+    <div class="row">
+        <div class="col-12 mx-auto">
+            <h2 class="text-center">Contact Form</h2>
+            <form name="contact" netlify>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input name="Name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name here!" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Location</label>
+                <input name="Location" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Where are you from!" required>
+            </div>  
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input name="Email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Feedback</label>
+                <textarea name="Feedback" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Please provide feeback for the blog, so we can make it even better!" required>
+                </textarea>
+            </div>
+    
+            <div class="mb-3 form-check">
+                <input name="Updates_Checkbox" type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Sign up for Updates</label>
+            </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        </div>
+    </div>
+</div>            
